@@ -1,0 +1,31 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* 背景色可根据需要调整 */
+}
+
+.animation-item {
+    width: 150px; /* 根据需要调整大小 */
+    height: 200px; /* 根据需要调整大小 */
+    background-color: #000; /* 动画角色背景色，这里用黑色表示骏马剪影 */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px; /* 可选：为骏马剪影添加圆角 */
+}
+
+/* 添加一个简单的淡入淡出动画效果 */
+@keyframes fade {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
